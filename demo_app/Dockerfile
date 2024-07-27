@@ -1,7 +1,9 @@
 FROM node:20
 
-WORKDIR /demoapp
+WORKDIR /myapp
 
 COPY . .
-
 RUN npm install
+
+
+CMD [ "npm", "start" ]
